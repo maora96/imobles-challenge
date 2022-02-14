@@ -53,8 +53,9 @@ export default function Header() {
 
 
             <div className="call-to-action">
+                <img src={Badge} className="badge-mobile"/>
               <a href="" className="call">Become a Nanny Share</a>
-              <a href="">Sign In</a>
+              <a href="" className="sign-in">Sign In</a>
             </div>
           </nav>
 

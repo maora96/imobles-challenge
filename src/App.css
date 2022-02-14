@@ -57,6 +57,10 @@ header .badge {
   left:20px;
 }
 
+header .badge-mobile {
+  display: none;
+}
+
 header nav {
   display: flex;
   justify-content: space-between;
@@ -136,7 +140,6 @@ header .hero .video img {
 
 .notice a {
   color:#5E20A4;
-  text-decoration: none;
   margin-right: 0.5rem;
   font-weight: 500;
 }
@@ -180,6 +183,10 @@ header .hero .video img {
 .about a {
   color:#5E20A4;
   font-weight: 500;
+}
+
+.about .img-mobile {
+  display: none;
 }
 
 
@@ -432,8 +439,215 @@ footer .copyright {
     width: 100%;
   }
 
-  header img {
+  header .content-right img {
     display: none;
   }
 
+  header .menu {
+    display: none;
+  }
+
+  header .sign-in {
+    display: none;
+  }
+
+  
+  header nav .call-to-action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  header nav .call-to-action .call {
+    margin-right: 0;
+  }
+
+  header .badge-mobile {
+    display: block;
+  }
+
+  header .hero h1 {
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
+  }
+
+  header .hero span {
+    font-size:16px;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  header .hero .content-right {
+    display: none;
+  }
+
+  header .hero .content-left {
+    text-align: center;
+  }
+
+  .notice {
+    height: auto;
+  }
+
+  .notice .container {
+    flex-direction: column;
+    padding: 2rem;
+    width: 90%;
+    text-align: center;
+  }
+
+  .notice img, .notice a {
+    margin-right: 0;
+    margin-bottom: .5rem;
+  }
+
+  .about {
+    width: 80%;
+    flex-direction: column-reverse;
+    justify-content: center;
+    height: auto;
+    margin-top:4rem;
+    margin-bottom: 3rem;
+  }
+
+  .about img {
+    width: 304px;
+  }
+
+  .about h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .about .about-content {
+    margin-right: 0;
+    margin-top:2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about p {
+    text-align: center;
+  }
+
+  .newsletter {
+    width:80%;
+    height: auto;
+    padding-top:3rem;
+    padding-bottom: 3rem;
+  }
+
+  .newsletter h2, .newsletter span {
+    text-align: center;
+  }
+
+  .newsletter form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .newsletter form input {
+    width: 100%;
+    margin-bottom: .5rem;
+  }
+
+  .shared-payments {
+    width:80%;
+    flex-direction: column;
+    margin-bottom:3rem;
+    margin-top:3rem;
+    height: auto;
+  }
+
+  .shared-payments img {
+    width:312px;
+  }
+  
+
+  .shared-payments .shared-payments-about {
+    width:100%;
+    height: auto;
+    text-align: center;
+    margin-top:3rem;
+  }
+
+  .shared-payments .shared-payments-about h2 {
+    font-size: 22px;
+  }
+
+  .framework {
+    width: 80%;
+    height: auto;
+  }
+
+  .framework h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .framework .framework-content {
+    height: auto;
+    margin-bottom: 0;
+  }
+
+  .framework .image {
+    display: none;
+  }
+
+  .framework a {
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .coming-soon {
+    width: 80%;
+    height: auto;
+    margin-top:3rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .coming-soon h2 {
+    text-align: center;
+    font-synthesis: 22px;
+  }
+
+  .coming-soon p {
+    width: 100%;
+  }
+
+
+  footer h2 {
+    font-size: 22px;
+  }
+
+  footer p {
+    font-size: 16px;
+  }
+
+  footer nav {
+    flex-direction: column;
+    border-bottom: 1px solid #DFDFDF;
+    padding-bottom: 2rem;
+    margin-top: 2.5rem;
+  }
+
+  footer nav .menu {
+    width: 70%;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  footer nav .menu a {
+    margin-right: 0.8rem;
+  }
+
+  footer .copyright {
+    margin-top: 1rem;
+  }
 }
