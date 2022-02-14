@@ -4,11 +4,11 @@ import Section3Image from "./assets/section3-image.png"
 import Section4Image from "./assets/section4-image.png"
 import Section5Image from './assets/section5-image.png'
 
-
-import "./App.css";
 import Header from "./components/header";
 import Footer from "./components/footer";
 import Newsletter from "./components/newsletter";
+
+import "./styles/app.css"
 
 
 function App() {

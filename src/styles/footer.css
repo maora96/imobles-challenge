@@ -1,0 +1,122 @@
+footer {
+    background:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom:1rem;
+    padding-top:5rem;
+  }
+  
+  footer h2 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  
+  footer p {
+    font-size:18px;
+    margin-bottom: 2rem;
+  }
+  
+  footer .button {
+    background:#5E20A4;
+    display: flex;
+    border-radius: 4px;
+    padding:1rem 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  footer .button img {
+    margin-right: 1rem;
+  }
+  
+  footer .button div {
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+  
+  footer .button div span {
+    font-size: 12px;
+    line-height: 16px;;
+  }
+  
+  footer .button div span:first-child {
+    font-size: 16px; 
+    line-height: 28px;
+  }
+  
+  footer a {
+    color:#5E20A4;
+    font-weight: 500;
+    font-size: 16px; 
+  }
+  
+  footer nav {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:4rem;
+  }
+  
+  footer nav .menu {
+    display: flex;
+    justify-content: space-between;
+    width:30%;
+  }
+  
+  footer nav .menu a {
+    color:#3D3D3D;
+    text-decoration: none;
+    font-size:14px;
+    line-height: 20px;
+  }
+  
+  footer .social-media-links a {
+    margin-right: 1rem;
+  }
+  
+  footer .copyright {
+    font-weight:400;
+    font-size:12px;
+    line-height:16px;
+    color: #3D3D3D;
+    margin-top:2rem;
+  }
+
+  @media only screen and (max-width: 600px) {
+    
+    footer h2 {
+        font-size: 22px;
+      }
+    
+      footer p {
+        font-size: 16px;
+      }
+    
+      footer nav {
+        flex-direction: column;
+        border-bottom: 1px solid #DFDFDF;
+        padding-bottom: 2rem;
+        margin-top: 2.5rem;
+      }
+    
+      footer nav .menu {
+        width: 70%;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+    
+      footer nav .menu a {
+        margin-right: 0.8rem;
+      }
+    
+      footer .copyright {
+        margin-top: 1rem;
+      }
+
+}

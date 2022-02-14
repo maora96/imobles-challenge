@@ -2,6 +2,9 @@ import React, {useState} from 'react'
 import { fetchWithBody } from '../utils/fetch'
 import toast, { Toaster } from 'react-hot-toast';
 
+import "../styles/newsletter.css"
+
+
 export default function Newsletter() {
 
     const [name, setName] = useState('')

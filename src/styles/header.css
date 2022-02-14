@@ -1,0 +1,165 @@
+header {
+    min-height: 80vh;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  
+  header::before,
+  header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  
+  header::before {
+    background: linear-gradient(
+      314.72deg,
+      hsl(292, 57%, 64%) -1.5%,
+      hsl(266, 50%, 53%) 39.43%,
+      hsl(268, 81%, 37%) 86.02%
+    );
+  }
+  
+  header::after {
+    background-image: url('../assets/header-background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    mix-blend-mode: overlay;
+  }
+  
+  header .badge {
+    width:48px;
+    height: 64px;
+    position: absolute;
+    left:20px;
+  }
+  
+  header .badge-mobile {
+    display: none;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    height:4rem;
+  }
+  
+  header nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  header nav .menu a {
+    margin-right: 2rem;
+  }
+  
+  header nav .call-to-action .call {
+    background:#00A870;
+    padding:.8rem 1.5rem;
+    margin-right:2rem;
+    line-height: 20px;
+    border-radius: 4px;
+  }
+  
+  header .hero {
+    width: 80%;
+    height:calc(80vh - 4rem);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+  }
+  
+  header .hero h1 {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+  
+  header .hero span {
+    font-size:18px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  
+  header .hero .video {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    text-decoration: underline;
+  }
+  
+  header .hero .video img {
+    margin-right: 1rem;
+  }
+
+  @media only screen and (max-width: 600px) {
+
+    header {
+      width: 100%;
+    }
+  
+    header .content-right img {
+      display: none;
+    }
+  
+    header .menu {
+      display: none;
+    }
+  
+    header .sign-in {
+      display: none;
+    }
+  
+    header .hero .video img {
+      margin-right: 0.4rem;
+    }
+    
+    header nav .call-to-action {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+  
+    header nav .call-to-action .call {
+      margin-right: 0;
+    }
+  
+    header .badge-mobile {
+      display: block;
+    }
+  
+    header .hero h1 {
+      font-size: 28px;
+      line-height: 32px;
+      text-align: center;
+    }
+  
+    header .hero span {
+      font-size:16px;
+      line-height: 28px;
+      text-align: center;
+    }
+  
+    header .hero .content-right {
+      display: none;
+    }
+  
+    header .hero .content-left {
+      text-align: center;
+    }
+}
