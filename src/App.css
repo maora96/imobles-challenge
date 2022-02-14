@@ -424,3 +424,16 @@ footer .copyright {
   color: #3D3D3D;
   margin-top:2rem;
 }
+
+
+@media only screen and (max-width: 600px) {
+
+  header {
+    width: 100%;
+  }
+
+  header img {
+    display: none;
+  }
+
+}
