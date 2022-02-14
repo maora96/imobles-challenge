@@ -451,6 +451,9 @@ footer .copyright {
     display: none;
   }
 
+  header .hero .video img {
+    margin-right: 0.4rem;
+  }
   
   header nav .call-to-action {
     display: flex;
