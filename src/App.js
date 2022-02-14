@@ -1,59 +1,20 @@
-import Badge from "./assets/badge.png";
-import PlayButton from "./assets/play-button.png";
-import HeaderImage from "./assets/header-image.png";
-
 import ProfilePic from "./assets/profile-pic.png";
 import Section1Image from "./assets/section1-image.png";
 import Section3Image from "./assets/section3-image.png"
 import Section4Image from "./assets/section4-image.png"
 import Section5Image from './assets/section5-image.png'
 
-import Icon from "./assets/icon.svg"
-import Logo from "./assets/logo.svg"
-import Instagram from "./assets/instagram.png"
-import Twitter from "./assets/twitter.png"
-import Facebook from "./assets/facebook.png"
+
 import "./App.css";
+import Header from "./components/header";
+import Footer from "./components/footer";
+import Newsletter from "./components/newsletter";
 
 
 function App() {
   return (
     <div className="App">
-      <header>
-        <img src={Badge} className="badge"/>
-        <nav>
-            <div className="menu">
-              <a href="">Create Your Nanny Share</a>
-              <a href="">Browse Shares</a>
-              <a href="">Our Story</a>
-            </div>
-
-
-            <div className="call-to-action">
-              <a href="" className="call">Become a Nanny Share</a>
-              <a href="">Sign In</a>
-            </div>
-          </nav>
-
-          <section className="hero">
-            <div className="content-left">
-              <h1>Easily create or join a local<br/> nanny share with Hapu</h1>
-              <span>Hapu is Airbnb for nanny share. Share your home, nanny and costs <br/>and create new flexible, affordable solutions in childcare.</span>
-
-              <div className="video">
-              <img src={PlayButton}/>
-                See hapu in action (27 seconds)
-              </div>
-            </div>
-
-            <div className="content-right">
-              <img src={HeaderImage}/>
-            </div>
-
-          </section>
-       
-      </header>
-
+      <Header/>
 
       <section className="notice">
         <div className="container">
@@ -73,7 +34,10 @@ function App() {
         <img src={Section1Image}/>
       </section>
 
-      <section className="newsletter">
+
+      <Newsletter/>
+
+      {/* <section className="newsletter">
         <h2>Are you a parent without a nanny and looking to share?</h2>
         <span>Leave us your name and email and we’ll update you as soon as a share becomes available in your area!</span>
 
@@ -83,7 +47,7 @@ function App() {
           <button>Send</button>
         </form>
       
-      </section>
+      </section> */}
 
 
       <section className="shared-payments">
@@ -120,38 +84,7 @@ function App() {
         <p>With the Hapu daily diary your nanny will be able to update you and your sharers with photos and commentary of the day. You and sharers will receive notifications and you’ll be able to login to view the daily adventures fo your little ones. We can’t wait!</p>
       </section>
 
-      <footer>
-        <h2>Become a nanny share host</h2>
-        <p>Takes less than 5 minutes to get started</p>
-
-        <div className="button">
-          <img src={Icon}/>
-          <div>
-            <span>Create Your Nanny Share</span>
-            <span>Takes less than 5 minutes</span>
-          </div>
-        </div>
-
-        <a href="">Or browse local nanny-shares</a>
-
-        <nav>
-          <img src={Logo}/>
-
-          <div className="menu">
-            <a href="">Share Your Nanny</a>
-            <a href="">Our Story</a>
-            <a href="">Blog</a>
-            <a href="">Terms & Privacy</a>
-          </div>
-
-          <div className="social-media-links">
-            <a href=""><img src={Facebook}/></a>
-            <a href=""><img src={Twitter}/></a>
-            <a href=""><img src={Instagram}/></a>
-          </div>
-        </nav>
-        <p class="copyright">Copyright © 2017 Hapu PTY Limited All rights reserved</p>
-      </footer>
+      <Footer/>
 
     </div>
   );
