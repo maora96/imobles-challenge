@@ -19,7 +19,7 @@ project for Imobles' junior front-end dev role.
 # clone repository
 $ git clone https://github.com/maora96/imobles-challenge.git
 
-# install Dependencies
+# install dependencies
 $ npm install
 
 # run app in development mode
