@@ -585,6 +585,7 @@ footer .copyright {
   .framework {
     width: 80%;
     height: auto;
+    padding: 3rem 0;
   }
 
   .framework h2 {
