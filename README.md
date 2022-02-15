@@ -1,6 +1,6 @@
 # imobles - jungle devs challenge
 
-project for Imobles' junior front-end dev role.
+project for imobles' junior front-end dev role.
 
 ## technologies
 
